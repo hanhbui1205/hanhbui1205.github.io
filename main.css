@@ -1,0 +1,531 @@
+body {
+    background: white;
+    margin: 0;
+    padding: 1em 0;
+    font: large/1.8 Helvetica, 'Open Sans', sans-serif;
+}
+
+
+.img-container {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+}
+
+.img-container img {
+    border-radius: 50%;
+    max-width: 65%;
+}
+
+header h1 {
+    font: 3.2em 'Great Vibes', cursive;
+    margin: 0.2em 1em 0 0.1em;
+}
+
+#header-sub {
+    font: 1.7em 'Raleway', sans-serif;
+    margin: -0.5em 1em 1em 1.8em;
+    font-style: italic;
+    font-weight: 300;
+}
+
+
+nav ul {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    background-color: #edecec;
+}
+
+
+nav li {
+  padding: 0;
+  text-align: center;
+  text-decoration: none;
+  list-style-type: none;
+  border-bottom: 1px solid black;
+  font-size: 1.2em;
+}
+
+nav li:first-child {
+  border-top: 1px solid black;
+}
+
+nav a {
+  display: block;
+  color: black;
+  padding: 10px 0;
+  text-decoration: none;
+}
+
+nav li:hover {
+  background-color: rgba(133, 125, 125, 0.347);
+}
+
+nav a:hover {
+    color: white;
+}
+
+#wrap {
+margin: 1em 0.7em;
+padding: 1em 0;
+text-align: center;
+}
+
+h2 {
+    font: 2em 'Playfair Display', 'Allerta Stencil', sans-serif;
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 0.6em;
+}
+
+h3 {
+    font: 1.5em 'Playfair Display', 'Allerta Stencil', sans-serif;
+    margin-bottom: 0;
+    font-weight: 800;
+}
+
+p{
+    text-align:justify;
+    margin-bottom: 1.5em;
+}
+
+.cursive {
+    font: 1.6em 'Great Vibes', cursive;
+    font-weight: 800;
+}
+
+figure {
+    margin: 1em 0.5em;
+    padding-top: 1em;
+    padding-bottom: 0;
+}
+
+figcaption {
+    font-style: italic;
+    line-height: 1;
+}
+
+.image {
+    max-width: 98%;
+    border-radius: 10px;
+}
+
+
+.button-container1 a {
+    text-decoration: none;
+}
+
+
+
+.button-group1 {
+    background-color: rgba(0, 0, 0, 0.826);
+    color: white;
+    border: rgba(0, 0, 0, 0.826) solid 2px;
+    border-radius: 45px;
+    padding: 6px 8px;
+    font: 1em sans-serif;
+    margin: 0 0.1em;
+    cursor: pointer;
+}
+
+
+.button-container1 {
+    margin: 1.5em;
+    text-align: center;
+}
+
+#copy-right {
+    font-style: italic;
+    margin-left: 0.5em;
+    font-size: medium;
+}
+
+.back-to-top {
+    color: black;
+    float: right;
+    font-size: 1.2em;
+}
+
+.laptop-view {
+    display: none;
+}
+
+.raleway {
+    font-family: 'Raleway', sans-serif;
+}
+
+footer {
+    padding: 0.2em 0;
+    background-color: #e9e4e4;
+    margin: 1em 0 -1em 0;
+}
+
+footer p {
+    line-height: 1;
+    margin: 1em 0;
+    text-align: center;
+}
+
+/*some specific style for education page*/
+.education section {
+    padding-bottom: 4em;
+}
+
+.two-columns-sym-item li {
+    text-align: left;
+    list-style-type: circle;
+}
+
+h4 {
+    text-align: left;
+    line-height: 1;
+    margin-top: 3em;
+}
+
+.education-img {
+    width: 100%;
+    margin-top: 2em;
+    border-radius: 10px;
+}
+
+/*some specific style for project page*/
+.card {
+    width: 100%;
+    border: 1px solid #ccc;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 1em;
+}
+  
+.card img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+  
+.card-title {
+    padding: 10px;
+    background-color: #f1f1f1;
+    text-align: center;
+    font-weight: bold;
+}
+
+/*grid*/
+
+/* Mobile view: 1 column */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 20px;
+    padding: 20px;
+    justify-items: center;
+}
+
+.grid-item a {
+    text-decoration: none;
+    color: black; 
+}
+
+.card-title {
+    font-weight: 100;
+}
+
+.card-overlay {
+    display: none;
+}
+
+/*service website page*/
+#image-wrap {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between; /* Distribute images along the main axis */
+    align-items: center;
+    width: 100%;
+}
+
+#image-wrap img, #inventory img,
+#converter img,
+#image-wrap-travel img,
+#image-wrap-calculator img {
+    max-width: 90%; 
+    box-sizing: border-box;
+    margin: 1em auto;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+}
+
+#description h3, 
+#description-inventory h3,
+#description-converter h3,
+#description-travel h3,
+#description-calculator h3 {
+    text-align: left;
+}
+
+#description {
+    margin: 0 auto;
+    width: 90%;
+}
+
+#description-inventory, #description-converter {
+    margin: 0 auto;
+    width: 85%;
+}
+
+#description-travel {
+    margin: 0 auto;
+    width: 100%;
+}
+
+.craps-div ul {
+    list-style-type:disc;
+}
+.craps-div li {
+    text-align: left;
+    padding-bottom: 1em; 
+}
+
+
+@media screen and (min-width: 425px) {
+    #wrap {
+        margin: 0 auto;
+        padding: 3em 0;
+        width: 80%;
+    }
+    
+    .img-container img {
+        max-width: 350px;
+    }
+
+    .image {
+        width: 98%;
+        max-width: 400px;
+        border-radius: 30px;
+    } 
+   
+    h3 {
+        font-size: 1.5em;
+    }
+
+    footer {
+        padding: 2.5em;
+    }
+    
+    /*Some specific styles for education.html*/
+
+    .mobile-view {
+        display: none;
+    }
+
+    /*Project page*/
+    /* tablet view for the grid in project page: 2 columns */
+    .grid-container {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    padding: 1em 0;
+    margin: 0;
+    }
+
+    /*Service Website page*/
+
+    #image-wrap img, #inventory img,
+    #image-wrap-travel img,
+    #image-wrap-calculator img {
+        width: 85%; 
+        max-width: 500px;
+        box-sizing: border-box;
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+    }
+
+    
+
+    /*travel app page*/
+    #description-travel, #description-calculator {
+        margin: 0 auto;
+        width: 80%;
+    }
+}
+
+@media screen and (min-width: 768px){
+    header {
+        margin: 1em;
+    }
+    
+    #wrap {
+        margin: 0 auto;
+        width: 90%;
+    }
+
+    nav ul {
+        width: 100%;
+        flex-direction: row;
+        justify-content: center;
+        
+     }
+  
+    nav li {
+        padding: 0 1.5em;
+        border-bottom: none;
+        font-size: 1.5em;
+      }
+      
+    nav li:first-child {
+       border-top: none;
+    }
+      
+    .img-container {
+        display: flex;
+        justify-content: center;
+        align-items: center; 
+        flex-direction: row;
+    }
+
+    .image {
+        width: 98%;
+        max-width: 470px;
+        max-height: 620px;
+        border-radius: 40px;
+    } 
+
+    .laptop-view.buttons {
+        display: flex;
+        flex-direction: column;
+        line-height: 1;
+        padding-top: 10em;
+        align-items: center;
+    }
+
+    .laptop-view .raleway {
+        font-size: 1.2em;
+        padding-left: 2em;
+    }
+
+    div.laptop-view p {
+        line-height: 1;
+        padding: 0.2em;
+        margin: 0;
+    }
+
+    .button-group1:hover {
+        background-color: white;
+        color: black;
+    }
+
+    .button-group1 a:hover {
+        color: black;
+        background-color: white;
+    }
+
+    .two-columns-asym {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .two-columns-asym section {
+        width: 55%;
+        
+    }
+
+    .two-columns-asym section:nth-child(2) {
+        width: 35%;
+        margin-left: 10%;
+    }
+
+    .two-columns-sym {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-end;
+        justify-content: space-evenly;
+    }
+
+    .two-columns-sym-item {
+        width: 48%;
+    }
+
+    .two-columns-sym-item p {
+        margin-bottom: 0;
+    }
+
+    figcaption {
+        font-size:medium;
+    }
+
+    /*for page education*/
+    .education {
+        align-items: flex-start;
+    }
+
+    .education section {
+        width: 40%;
+    }
+
+    /*project page*/
+    .grid-container {
+        grid-template-columns: repeat(3, 1fr); /* 3 columns on laptop view */
+        gap: 30px;
+    }
+
+    .card {
+        position: relative;
+    }
+
+    .card-image-container {
+        position: relative;
+        cursor: pointer;
+    }
+
+    .card-overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(255, 255, 255, 0.9); /* opaque white background */
+        opacity: 0; /* start with overlay hidden */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: opacity 0.3s; 
+    }
+    
+    .card-image-container:hover .card-overlay {
+        opacity: 1; /* show overlay on hover */
+    }
+    
+    .view-detail {
+        color: #186ecb;
+        font-weight:500;
+        font-size: 1.2em;
+    }
+
+    /*service page*/
+   
+    #image-wrap {
+        flex-direction: row;
+    }
+
+    #image-wrap img {
+        max-width: 40%; /* Reset width for one column */
+        margin: 2em auto; /* Center the images horizontally */
+    }
+
+    #inventory img {
+        max-width: 90%;
+    }
+
+    /*travel app page*/
+    #image-wrap-travel img {
+        max-width: 60%; /* Reset width for one column */
+        margin: 2em auto; /* Center the images horizontally */
+    }
+
+    #description-travel, #description-calculator {
+        width: 70%;
+    }
+
+    #image-wrap-calculator img {
+        width: 60%;
+    }
+}
+
